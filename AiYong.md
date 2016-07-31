@@ -12,3 +12,14 @@
 
 7. sui在 iphone6 上使用 1rem = 20px
     小于 375px 的设备上不做缩小处理，对 大于 375px 宽度的设备进行等比缩放
+
+8. js可以被动态地加载 item-top.js  
+    loadpage(pageId,'http://qnmitem.zzgdapp.com/html/js/btyh_list.js',true);break;
+    (同一个脚本只能被加载一次)
+
+9. winscp `ctrl-u` 监控本地目录更新到服务器  (少用，多用F5)
+
+10. 公共修改的文件，及时push,让其他人拉下代码，防止服务器版本回退
+
+11. 写项目的时候先把样式和js写在html文件当中便于上传和避免冲突
+	更改公共文件,可能会导致别人版本回退和自己的代码回退

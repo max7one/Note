@@ -32,7 +32,14 @@
 ```
 
 - 元素自适应
-    
+
     浮动元素的宽度是随内容变化的
     父容器设为 float:left或者 display:inline-block
     子元素 width:100% 也会自适应
+
+
+
+- 刷新当前页
+
+    windows.history.go(0); 从缓存里读取
+    windows.location.reload(); 重新向服务器发起请求,相当与F5
