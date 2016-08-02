@@ -26,6 +26,7 @@
 `ctrl-alt-shift-[` 折叠全部  
 `ctrl-alt-shift-]` 展开全部  
 `ctrl-.` 查看按键绑定
+`ctrl-r` 查看当前文件的标题(对于查看markdown很有用)
 
 ##### 其他技巧
 
@@ -47,7 +48,7 @@ keymap.cson
 'atom-workspace, atom-workspace atom-text-editor':
     'ctrl-m': 'markdown-preview:toggle'
 ```
-                
+
 ##### 常用插件
 
 - emmet

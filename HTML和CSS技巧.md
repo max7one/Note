@@ -8,7 +8,7 @@
   background-color 是css属性
 
 - CSS3用法
-1. 容器内部元素(块级和行内都行)水平垂直居中
+1. 容器内部固定宽高元素(块级和行内都行)水平垂直居中
 ```html
 <style>
     .box {
@@ -33,13 +33,13 @@
 
 - 元素自适应
 
-    浮动元素的宽度是随内容变化的
-    父容器设为 float:left或者 display:inline-block
+    浮动元素的宽度是随内容变化的  
+    父容器设为 float:left或者 display:inline-block  
     子元素 width:100% 也会自适应
 
 
 
 - 刷新当前页
 
-    windows.history.go(0); 从缓存里读取
+    windows.history.go(0); 从缓存里读取  
     windows.location.reload(); 重新向服务器发起请求,相当与F5

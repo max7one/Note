@@ -7,6 +7,9 @@
     git config --global user.email "email@example.com"
     设置用户名和邮箱
 
+    git config --global core.whitespace cr-at-eol
+    git diff的时候忽略换行符的差异
+
 ###  快捷键
 
     git init  
@@ -22,9 +25,14 @@
     推送到本项目源的主分支
 
     多用git fetch
+	下载到本地后可与本地文件进行比较
     git fetch origin master
     git log -p master..origin/master
     git merge origin/master
+	或者
+	git fetch origin master:tmp
+    git diff tmp
+    git merge tmp
 
     git remote add Org1 git@XXX.git
 

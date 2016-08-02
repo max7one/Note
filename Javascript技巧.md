@@ -12,15 +12,15 @@
 ### 三元运算符
 
     (contidion) ? expression1 : expression2
-    
+
     如果contidion为true，则返回expression1的值，否则返回expression2的值
-    
+
 可以把三元运算的返回值再赋值给一个变量    
 
-    var a = (contidion) ? expression1 : expression2 
-    
+    var a = (contidion) ? expression1 : expression2
+
     执行顺序：先执行三元运算，后执行赋值
-    
+
 ### 回调函数    
 
 > 函数A作为参数(函数引用)传递到另一个函数B中，并且这个函数B执行函数A。我们就说函数A叫做回调函数。如果没有名称(函数表达式)，就叫做匿名回调函数
@@ -64,7 +64,7 @@ print(2); // log内的this指向window
 // 2
 
 ```
-    
+
 ### `top`    
 
 top.onclick=function(){};
@@ -144,18 +144,19 @@ console.log(time);
 ### ParseInt
 
 全局函数 parseInt(string, radix) 的参数radix必须介于2~36之间   
-**radix为进制 默认10进制 **  
+**radix为进制 默认10进制**  
+
 而且字符串string中的数字**不能大于radix**才能正确返回数字结果值
 
 ```js
  ["1", "2", "3"].map(parseInt)  
  // [1,NaN,NaN]
- 
+
  parseInt("1",0); // 1
  parseInt("2",1); // NaN
  parseInt("3",2); // NaN
 ```
- 
+
 ### String
 
 ```js
@@ -168,7 +169,7 @@ new String('123') === '123'; //false  左边为对象
 1. 为了保证构造函数必须与new命令一起使用
 一个解决办法是在构造函数内部使用严格模式，即第一行加上use strict。
 
-2. 在构造函数内部 
+2. 在构造函数内部
 if (!(this instanceof Fubar)) {
   return new Fubar(foo, bar);
 }

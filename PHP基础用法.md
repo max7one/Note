@@ -2,8 +2,8 @@
 
   sudo /opt/lampp/lampp startapache  启动apache
   sudo /opt/lampp/lampp startmysql  启动mysql
-  
-  更改网站根目录 /opt/lampp/etc/httpd.conf 
+
+  更改网站根目录 /opt/lampp/etc/httpd.conf
   修改
     DocumentRoot "D:/xampp/htdocs"
     <Directory "D:/xampp/htdocs">
@@ -22,13 +22,13 @@ echo "\n";  html源代码换行
 echo "<br>";　页面显示换行
 
 ### 引用
-    
-##### require 
-require("MyRequireFile.php"); 
+
+##### require
+require("MyRequireFile.php");
 这个函数通常放在 PHP 程序的最前面，PHP 程序在执行前，就会先读入 require 所指定引入的文件，使它变成 PHP 程序网页的一部份。常用的函数，亦可以这个方法将它引入网页中。
 
-##### include 
-使用方法如 include("MyIncludeFile.php"); 
+##### include
+使用方法如 include("MyIncludeFile.php");
 这个函数一般是放在流程控制的处理部分中。PHP 程序网页在读到 include 的文件时，才将它读进来。这种方式，可以把程序执行时的流程简单化。
 
 ##### use 引用模块
@@ -63,10 +63,16 @@ Public具有最大的访问权限，被定义成Public的属性（变量）或�
 
 ### 异常  exception
 `try{}catch{}`
-  
+
 `trｙ`相当于　`if`, `catch`相当于`else`
 
 ### 调试
 
 error_log("string"); 输出到`php_error_log`
 tail php_error_log -f 在teminal监控
+
+### 连接数据库
+
+    $link1 = mysql_connect('127.0.0.1', 'code1', '');
+    $link2 = mysql_connect('127.0.0.1', 'code1', '', true); //开启一个新的连接
+    $res = mysql_query('select * from user limit 1', $link1); //从第一个连接中查询数据
