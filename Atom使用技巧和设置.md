@@ -1,6 +1,4 @@
-### Atom 使用
-
-##### 常用快捷键  
+# 常用快捷键  
 
 `ctrl-p` **项目内文件搜索**  
 `ctrl-shift-p` 应用搜索  
@@ -28,14 +26,14 @@
 `ctrl-.` 查看按键绑定
 `ctrl-r` 查看当前文件的标题(对于查看markdown很有用)
 
-##### 其他技巧
+## 其他技巧
 
 1. 当焦点位于目录树上时，你可以用快捷键 a,`shift-a`,m 以及 delete 来创建、移动或删除文件和目录
 2. 当你按下 ctrl-T 或 ctrl-P 的时候，模糊查找框（Fuzzy Finder）就会弹出。它允许你通过输入文件名或路径的一部分，在整个项目中模糊查找相应的文件。
 3. `ctrl-alt-.` 补全标签或括号 `ctrl-alt-j` 跳转到匹配标签或括号
 4. `ctrl-d` select next , `alt-F3`  select all
 
-##### 配置
+## 配置
 
 keymap.cson
 ```
@@ -49,7 +47,7 @@ keymap.cson
     'ctrl-m': 'markdown-preview:toggle'
 ```
 
-##### 常用插件
+## 常用插件
 
 - emmet
 - atom-beautify
@@ -60,9 +58,15 @@ keymap.cson
 **disable**
 - whitespace
 
-##### 正则查找
+## 正则查找
 
 开启正则  `ctrl-alt-/`
 全部替换  `ctrl-enter`
 
 空行  `^\r\n`
+
+## 代码提示补全
+
+`c` -> `enter` ==> code
+```
+```
