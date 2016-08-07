@@ -55,6 +55,9 @@
     创建+切换分支
 
     git branch
+    查看当前分支
+
+    git branch -a
     查看所有分支
 
     git branch -d <name>
