@@ -1,11 +1,11 @@
-## 设置
-
-    git config --global core.quotepath false
-    防止中文乱码
+## 初始设置设置
 
     git config --global user.name "Your Name"
     git config --global user.email "email@example.com"
     设置用户名和邮箱
+
+    git config --global core.quotepath false
+    防止中文乱码
 
     git config --global core.whitespace cr-at-eol
     git diff的时候忽略换行符的差异
