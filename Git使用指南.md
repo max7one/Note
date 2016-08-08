@@ -10,7 +10,12 @@
     git config --global core.whitespace cr-at-eol
     git diff的时候忽略换行符的差异
 
-###  快捷键
+    git clone
+    如果是 `git` 协议需要 ssh密钥
+    如果是 `https` 协议不需要密钥,但需要每次输入用户名和密码
+
+
+##  快捷键
 
     git init  
     初始化未git仓库
@@ -43,7 +48,7 @@
     git stash
     将本地修改存储起来
 
-### 分支
+## 分支
 
     git branch dev
     创建分支dev
@@ -66,7 +71,7 @@
     git merge <name>
     合并某分支到当前分支
 
-### 其他
+## 其他
 
     git log  后面可以加参数
         --shortstat：只显示--stat中最后的行数添加修改删除统计
@@ -97,7 +102,7 @@
     git reset --hard HEAD~1     返回到最近的第二次提交
     git reflog (查看命令历史，以便回到未来的版本) 开头的id
 
-### 解决冲突
+## 解决冲突
 
     1. git add
     2. git commit -m 'msg'
