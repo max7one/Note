@@ -70,3 +70,10 @@ keymap.cson
 `c` -> `enter` ==> code
 ```
 ```
+
+## 其他
+
+插件安装不上的问题 (`windows`的解决方式)
+1. `windows`在`.atom/package`下`git clone Url`
+2. `cd 插件目录`之后 `npm install`
+3. 重启`atom`
