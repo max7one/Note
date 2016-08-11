@@ -57,6 +57,8 @@ keymap.cson
 - file-icons
 - open-in-browser
 - autosave
+- autocomplete-paths
+- webbox-color 
 
 **disable**
 - whitespace
