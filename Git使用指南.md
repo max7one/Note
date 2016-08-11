@@ -8,7 +8,7 @@
     防止中文乱码
 
     git config --global core.whitespace cr-at-eol
-    git diff的时候忽略换行符的差异
+    git diff的时候忽略换行符的差异, ^M的消除
 
     git clone
     如果是 `git` 协议需要 ssh密钥
@@ -100,12 +100,13 @@
 
     grh = git reset HEAD filename 把暂存区的修改撤销掉，跟HEAD版本里的相同
     git reset --hard HEAD~1     返回到最近的第二次提交
+    git reset --hard fd3123^    返回到fd3123^
     git reflog (查看命令历史，以便回到未来的版本) 开头的id
 
 ## 解决冲突
 
     1. git add
-    2. git commit -m 'msg'
+    2. git commit -m 'msg' (可以commit两次,然后一并push)
     3. git pull
     4. git status
     5. 修改有冲突的代码
