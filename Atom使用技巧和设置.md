@@ -8,6 +8,7 @@
 `ctrl-,` 打开设置页面  
 `ctrl-n` 新建文件  
 `ctrl-o` 打开文件   
+`ctrl-backspace` 删除到前个单词首
 `ctrl-shift-o` 打开文件夹   
 `ctrl-g` 到达指定行  
 `ctrl-l` 设定当前文件的语法检测    
