@@ -53,13 +53,13 @@ keymap.cson
 
 ## 常用插件
 
-- emmet
+- emmet  (script:src => <script src=""></script>)
 - atom-beautify
 - file-icons
 - open-in-browser
 - autosave
 - autocomplete-paths
-- webbox-color 
+- webbox-color
 
 **disable**
 - whitespace
