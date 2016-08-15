@@ -62,12 +62,10 @@ keymap.cson
 - file-icons
 - Goto Definition
 
-**disable**
-- whitespace
-
 **注意点**
 `tree-view` 的 `Hide Ignored Names`选上
 `autosave` 的 'Enable'选上
+`whitespace` 的 `Remove Tralling whitespace` 去掉
 
 
 
