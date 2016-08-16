@@ -36,5 +36,5 @@
 3. 使用$0获取当前元素
 4. document.body.contentEditable='true';  改变当前页面为可编辑状态
 5. `ctrl-shirt-j`   直接打开控制台
-6. console控制台里  右键 log XMLHttpRequest 调试 XMLHttpRequest
+6. console控制台里  右键 `log XMLHttpRequest` 调试 XMLHttpRequest
 7. Alt + 鼠标左键，可以展开所有子节点
