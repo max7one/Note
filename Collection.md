@@ -24,3 +24,13 @@
 
 ### Javascript
 - http://javascript.ruanyifeng.com/
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+### jQuery
+- http://hemin.cn/jq/
+- http://www.css88.com/jqapi-1.9/
+- http://jquery.cuishifeng.cn/index.html
+
+## CSS
+- http://css.doyoe.com/
+- http://www.css88.com/book/css/
