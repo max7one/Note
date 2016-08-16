@@ -3,6 +3,7 @@
 - http://www.appcheers.com/
 - http://www.appinn.com/
 - http://www.iplaysoft.com/
+- http://www.potplayer.org/
 
 ### 技术博客
 - http://www.zhangxinxu.com/wordpress/
