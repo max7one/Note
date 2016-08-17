@@ -9,9 +9,9 @@
 - http://www.zhangxinxu.com/wordpress/
 - http://www.w3cplus.com/
 - https://github.com/FrankFang/best-chinese-front-end-blogs
-- https://segmentfault.com/ segmentfault
-- http://gold.xitu.io/welcome/frontend 掘金
-- http://toutiao.io/ 开发者头条
+- https://segmentfault.com/ `segmentfault`
+- http://gold.xitu.io/welcome/frontend `掘金`
+- http://toutiao.io/ `开发者头条`
 
 ### Chrome插件
 - uBlock Origin
@@ -19,8 +19,8 @@
 - Google翻译
 
 ### 技术
-- http://www.zcfy.cc 众成翻译
-- http://www.imooc.com/ 慕课网
+- http://www.zcfy.cc `众成翻译`
+- http://www.imooc.com/ `慕课网`
 
 ### Javascript手册
 - http://javascript.ruanyifeng.com/
