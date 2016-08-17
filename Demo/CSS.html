@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS代码片段</title>
+    <style>
+        hr {
+            height:2px;
+            border:none;
+            border-top:1px solid #ccc
+        }
+        /*文本省略*/
+        .con1 {
+            border: 1px solid #000;
+            width: 500px;
+            height: 100px;
+            overflow: hidden;
+        }
+        .text {
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis; /*文字超过省略*/
+            word-break: break-all; /*断行*/
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+        }
+
+        /*不自动宽度表格*/
+        table{
+            width:300px;
+            font: 16px sans-serif;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+        }
+        table.autowidth td{
+            white-space:nowrap; /*段落中的文本不进行换行*/
+        }
+    </style>
+</head>
+<body>
+    <h3>容器内显示文字3行,且超过的省略</h3>
+    <div class="con1">
+        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+    </div>
+    <br><hr>
+
+    <h3>表格不换行</h3>
+    <table>
+        <tr>
+            <td>1</td>
+            <td width="100%">Mr. John Doe </td>
+            <td>United States of America</td>
+            <td>2014</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td width="100%">Mr. Paul Jones</td>
+            <td>New Zealand</td>
+            <td>2013</td>
+        </tr>
+    </table>
+    <h3>表格宽度调整</h3>
+    <table class="autowidth">
+        <tr>
+            <td>1</td>
+            <td width="100%">Mr. John Doe </td>
+            <td>United States of America</td>
+            <td>2014</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td width="100%">Mr. Paul Jones</td>
+            <td>New Zealand</td>
+            <td>2013</td>
+        </tr>
+    </table>
+    <br><hr>
+
+
+</body>
+</html>
