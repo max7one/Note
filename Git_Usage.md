@@ -1,4 +1,4 @@
-## 初始设置设置
+## 初始设置
 
     git config --global user.name "Your Name"
     git config --global user.email "email@example.com"
@@ -14,7 +14,6 @@
     如果是 `git` 协议需要 ssh密钥
     如果是 `https` 协议不需要密钥,但需要每次输入用户名和密码
 
-
 ##  快捷键
 
     git init  
@@ -28,6 +27,9 @@
 
     git push orgin master
     推送到本项目源的主分支
+
+    git push -f orgin master
+    强制推送 (常用来远程仓库回退)
 
     多用git fetch
 	下载到本地后可与本地文件进行比较
@@ -81,6 +83,7 @@
     git log -p -N   展开显示每次提交的内容差异，-N 代表最近 N 次
     git log -p filename  显示filename 的提交差异
     git log --name --stat   显示新增、修改和删除的文件清单
+    git log --pretty=oneline  显示单行
     git blame filename
     是查看目前的每一行是哪个提交最后改动的
 
@@ -100,7 +103,13 @@
 
     grh = git reset HEAD filename 把暂存区的修改撤销掉，跟HEAD版本里的相同
     git reset --hard HEAD~1     返回到最近的第二次提交
-    git reset --hard fd3123^    返回到fd3123^
+
+    HEAD 当前版本
+    HEAD^ 上一个版本
+    HEAD^^ 上上个版本
+    HEAD~100 上100个版本
+
+    git reset --hard fd3123    本地仓库跳到`fd3123`提交
     git reflog (查看命令历史，以便回到未来的版本) 开头的id
 
 ## 解决冲突
