@@ -12,12 +12,14 @@
 - https://segmentfault.com/ `segmentfault`
 - http://gold.xitu.io/welcome/frontend `掘金`
 - http://toutiao.io/ `开发者头条`
-- http://div.io/#/welcome 
+- http://div.io/#/welcome
 
 ### Chrome插件
 - uBlock Origin
 - Axure RP Extension for Chrome
 - Google翻译
+- OneTab
+- Octotree 
 
 ### 技术
 - http://www.zcfy.cc `众成翻译`
