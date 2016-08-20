@@ -26,7 +26,10 @@
     将暂存区文件提交到仓库
 
     git push orgin master
-    推送到本项目源的主分支
+    把本地当前仓库推送到项目源的主分支 `master`
+
+    git push orgin gh-pages
+    把本地当前仓库推送到项目源的分支 `gh-pages`
 
     git push -f orgin master
     强制推送 (常用来远程仓库回退)

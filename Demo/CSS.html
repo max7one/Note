@@ -39,6 +39,27 @@
         table.autowidth td{
             white-space:nowrap; /*段落中的文本不进行换行*/
         }
+
+        /*Table布局*/
+        .d3{
+            width: 500px;
+            height: 100px;
+            border: 1px solid #ccc;
+            display: table;
+        }
+
+        .ele{
+            text-align:center;
+            vertical-align: middle;
+            display:table-cell;
+        }
+
+        .ele-inner{
+          display: inline-block; /*设为行内块级元素*/
+          background-color: #333;
+          color: #fff;
+        }
+
     </style>
 </head>
 <body>
@@ -84,6 +105,14 @@
     </table>
     <br><hr>
 
+    <h3>Table布局水平垂直居中</h3>
+    <div class='d3'>
+        <div class='ele'>
+          <div class="">居中居中居中居中居中居中居中居中<br>
+              居中居中居中居中居中居中居中居中<br>
+              居中居中居中居中居中居中居中居中居中居中</div>
+        </div>
+	</div>
 
 </body>
 </html>

@@ -12,6 +12,7 @@
 - https://segmentfault.com/ `segmentfault`
 - http://gold.xitu.io/welcome/frontend `掘金`
 - http://toutiao.io/ `开发者头条`
+- http://div.io/#/welcome 
 
 ### Chrome插件
 - uBlock Origin
