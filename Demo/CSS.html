@@ -9,6 +9,7 @@
         }
         hr {
             height:2px;
+            width: 700px;
             border:none;
             border-top:1px solid #ccc
         }
@@ -71,6 +72,106 @@
           color: #fff;
         }
 
+        /*搜索bar*/
+        .searchbar {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 3px solid #333;
+            position: relative;
+        }
+        .searchbar::after {
+            content: '';
+            display: block;
+            width: 3px;
+            height: 30px;
+            border-radius: 5px;
+            background: #333;
+            position: absolute;
+            right: -10px;
+            top: 14px;
+            transform: rotate(-45deg);
+        }
+
+        /*chrome*/
+        .chrome {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 0 4px #999, 0 0 2px #ddd inset;
+            background: radial-gradient(circle, #4FACF5 0, #2196F3 28%, transparent 28%),
+                        radial-gradient(circle, #fff 33%, transparent 33%),
+                        linear-gradient(-50deg, #FFEB3B 34%, transparent 34%),
+                        linear-gradient(60deg, #4CAF50 33%, transparent 33%),
+                        linear-gradient(180deg, #FF756B 0, #F44336 30%, transparent 30%),
+                        linear-gradient(-120deg, #FFEB3B 40%, transparent 40%),
+                        linear-gradient(-60deg, #FFEB3B 30%, transparent 30%),
+                        linear-gradient(0deg, #4CAF50 45%, transparent 45%),
+                        linear-gradient(60deg, #4CAF50 30%, transparent 30%),
+                        linear-gradient(120deg, #F44336 50%, transparent 50%),
+                        linear-gradient(180deg, #F44336 30%, transparent 30%);
+        }
+
+        /*提示栏*/
+        .tip1 {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .tip1:hover::after {
+            content: attr(data-title);   /*取到data-title属性的值*/
+            display: inline-block;
+            background-color: #ddd;
+            padding: 10px 14px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            position: absolute;
+            top: -50px;
+            left: 50px;
+            width: 100px;
+        }
+
+        .tip1:hover::before{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: -12px;
+            left: 90px;
+            border: 10px solid transparent;
+            border-top: 10px solid #ddd;
+        }
+
+        .tip2 {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .tip2:hover::after {
+            content: attr(data-title);   /*取到data-title属性的值*/
+            display: inline-block;
+            padding: 10px 14px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            position: absolute;
+            top: -50px;
+            left: 50px;
+            width: 100px;
+        }
+
+        .tip2:hover::before{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            left: 100px;
+            top: -16px;
+            transform: rotate(45deg);
+            background-color: #fff;
+            z-index: 1000;
+        }
     </style>
 </head>
 <body>
@@ -128,14 +229,24 @@
 
     <h3>Table布局水平居中</h3>
     <div >
-    <ul>
+    <ul style="list-style-type: none;">
         <li style="display:table;margin: 0 auto;">sdfsdfsfsfd</li>
         <li>sdfsdfsfsfd</li>
         <li>sdfsdfsfsfd</li>
     </ul>
-    </div>
+    </div><br><hr>
 
+    <h3>搜索</h3>
+    <div class="searchbar horizontal_center"></div><br><hr>
 
+    <h3>Chrome</h3>
+    <div class="chrome horizontal_center"></div>
+    <br><hr>
+
+    <h3>悬浮提示</h3>
+    <a href="" title="hello world" style="text-decoration: none; color:#000;">title实现悬浮提示</a>
+    <div class="tip1 horizontal_center" data-title="hello world">伪元素实现悬浮提示1</div>
+    <div class="tip2 horizontal_center" data-title="hello world">伪元素实现悬浮提示2</div>
 
 </body>
 </html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Animation</title>
+        <style>
+        /*电池样式*/
+        .battery{
+            width: 300px;
+            height: 100px;
+            border: 10px solid #00ff00;
+            border-radius: 20px; /*当圆角大于边缘时，开始出现内圆角*/
+            position: relative;
+        }
+
+        .battery::after{
+            content: '';
+            position: absolute;
+            background-color: #00ff00; /*背景色,只有背景色用这个属性*/
+            width: 15px;
+            height: 40px;
+            top: 30px;
+            right: -21px;
+            border-radius: 5px;
+        }
+
+        .battery::before{
+            content: '';
+            position: absolute;
+            height: 90px;
+            top: 5px;
+            left: 5px;
+            background-color: #00ff00;
+            border-radius: 5px;
+            animation: charging 5s linear infinite;
+        }
+
+        @keyframes charging {
+            0%{
+              width: 0%;
+            }
+            25%{
+              width: 24%;
+            }
+            50%{
+              width: 48%;
+            }
+            75%{
+              width: 72%;
+            }
+            100%{
+              width: 98%;
+            }
+        }
+
+        /*菜单图标*/
+        .menu{
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: #ccc;
+            position: relative;
+        }
+
+        .menu::before{
+            content: '';
+            position: absolute;
+            top: 26%;
+            left: 29%;
+            width: 40%;
+            height: 36%;
+            border-top: 4px solid #fff;
+            border-bottom: 4px solid #fff;
+        }
+
+        .menu::after{
+            content: '';
+            position: absolute;
+            top: 31%;
+            left: 29%;
+            width: 40%;
+            height: 16%;
+            border-bottom: 4px solid #fff;
+        }
+
+        /*弹球*/
+        .bouncing-ball{
+            width: 50px;
+            height: 50px;
+            background: radial-gradient(ellipse at 30px 10px,  #fff 0%, #03a9f4 25%, #000 90%);
+            border-radius: 50%;
+            animation: ball 0.8s infinite alternate;
+        }
+        /*阴影*/
+        .bouncing-ball::after {
+            content: '';
+            position: absolute;
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 1);
+            width: 70%;
+            left: 5%;
+            height: 2px;
+            animation: after 0.8s infinite alternate;
+        }
+        @keyframes ball{
+           0% {
+               transform: translateY(100px);
+               width: 53px;
+           }
+           8% {
+               width: 50px;
+           }
+           100% {
+               transform: translateY(0px);
+           }
+        }
+
+        @keyframes after{
+            0% {
+                bottom: 10px;
+            }
+            100% {
+                bottom: -100px;
+            }
+        }
+
+        </style>
+    </head>
+    <body>
+        <h3>电池</h3>
+        <div class="battery"></div>
+
+        <h3>菜单</h3>
+        <div class="menu"></div>
+
+        <h3>弹球</h3>
+        <div class="bouncing-ball"></div>
+    </body>
+</html>
