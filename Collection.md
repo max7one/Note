@@ -15,8 +15,9 @@
 - http://div.io/#/welcome
 
 ### 工具
-- http://www.bootcdn.cn/ `CDN`
-- https://smallpdf.com/cn `·`
+- https://github.com `Github`
+- http://www.bootcdn.cn/ `BootCDN`
+- https://smallpdf.com/cn `PDF`
 
 ### Chrome插件
 - uBlock Origin
