@@ -14,12 +14,16 @@
 - http://toutiao.io/ `开发者头条`
 - http://div.io/#/welcome
 
+### 工具
+- http://www.bootcdn.cn/ `CDN`
+- https://smallpdf.com/cn `·`
+
 ### Chrome插件
 - uBlock Origin
 - Axure RP Extension for Chrome
 - Google翻译
 - OneTab
-- Octotree 
+- Octotree
 
 ### 技术
 - http://www.zcfy.cc `众成翻译`

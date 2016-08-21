@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <title>CSS代码片段</title>
     <style>
+        body{
+            text-align: center;  /*容器内行内元素在父容器内水平居中*/
+        }
         hr {
             height:2px;
             border:none;
             border-top:1px solid #ccc
         }
+
+        /*不定宽水平居中*/
+        .horizontal_center{
+            display: table; /*重点就是这个属性,这个样式会使当前元素的宽度,采用最小的宽度.不是默认全宽*/
+            margin: 0 auto;
+        }
+
         /*文本省略*/
         .con1 {
             border: 1px solid #000;
             width: 500px;
             height: 100px;
             overflow: hidden;
+
         }
         .text {
             width: 100%;
@@ -49,11 +60,12 @@
         }
 
         .ele{
-            text-align:center;
-            vertical-align: middle;
-            display:table-cell;
+            /*text-align:center;*/
+            /*vertical-align: middle;*/
+            /*display:table-cell;*/
         }
 
+        /*在IE的兼容性*/
         .ele-inner{
           display: inline-block; /*设为行内块级元素*/
           background-color: #333;
@@ -64,7 +76,7 @@
 </head>
 <body>
     <h3>容器内显示文字3行,且超过的省略</h3>
-    <div class="con1">
+    <div class="con1 horizontal_center">
         <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -74,7 +86,7 @@
     <br><hr>
 
     <h3>表格不换行</h3>
-    <table>
+    <table class="horizontal_center">
         <tr>
             <td>1</td>
             <td width="100%">Mr. John Doe </td>
@@ -89,7 +101,7 @@
         </tr>
     </table>
     <h3>表格宽度调整</h3>
-    <table class="autowidth">
+    <table class="autowidth horizontal_center">
         <tr>
             <td>1</td>
             <td width="100%">Mr. John Doe </td>
@@ -106,11 +118,11 @@
     <br><hr>
 
     <h3>Table布局水平垂直居中</h3>
-    <div class='d3'>
+    <div class='d3 horizontal_center'>
         <div class='ele'>
-          <div class="">居中居中居中居中居中居中居中居中<br>
-              居中居中居中居中居中居中居中居中<br>
-              居中居中居中居中居中居中居中居中居中居中</div>
+          居中居中居中居中居中居中居中居中<br>
+          居中居中居中居中居中居中居中居中<br>
+          居中居中居中居中居中居中居中居中居中居中
         </div>
 	</div>
 
