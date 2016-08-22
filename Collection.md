@@ -18,13 +18,8 @@
 - https://github.com `Github`
 - http://www.bootcdn.cn/ `BootCDN`
 - https://smallpdf.com/cn `PDF`
+- http://pan.baidu.com/disk/home 
 
-### Chrome插件
-- uBlock Origin
-- Axure RP Extension for Chrome
-- Google翻译
-- OneTab
-- Octotree
 
 ### 技术
 - http://www.zcfy.cc `众成翻译`

@@ -11,6 +11,20 @@
 `Ctrl-0 ` 恢复默认字体大小
 `Ctrl-Shift-M` 切换到手机模式
 
+## 插件
+- uBlock Origin
+- Axure RP Extension for Chrome
+- Google翻译
+- OneTab
+- Octotree
+- Proxy SwitchyOmega
+- Search by Image (by Google)
+- SimpleExtManager
+- Wappalyzer
+- IE Tab
+- Chrome MySQL Admin
+- Postman
+
 ## Dev Shortcuts
 
 `ctrl-backspace`  控制台向前删除一个单词

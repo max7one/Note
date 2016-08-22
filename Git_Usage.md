@@ -115,6 +115,9 @@
     git reset --hard fd3123    本地仓库跳到`fd3123`提交
     git reflog (查看命令历史，以便回到未来的版本) 开头的id
 
+    同步submodule
+    git submodule update --recursive
+
 ## 解决冲突
 
     1. git add
