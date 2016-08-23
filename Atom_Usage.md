@@ -2,6 +2,7 @@
 
 `ctrl-p` 项目内文件搜索  
 `ctrl-shift-p` 应用搜索  
+`ctrl-shift-f` 在当前项目内搜索
 `ctrl-m` markdown预览  
 `F2` 修改文件名  
 `ctrl-\` 关闭打开侧边栏  
