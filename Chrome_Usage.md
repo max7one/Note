@@ -45,9 +45,20 @@
 5. F10跳到下一个函数call
 6. 在代码上加 `debugger`
 
+## `console`
+- `console.assert()` 判断一个表达式或变量是否为真,为false时才输出相应的信息到控制台
+- `console.count('被执行次数')` 统计代码被执行的次数
+- `console.dir()` 输出对象所有属性
+- `console.profile()` 性能分析
+- `console.time()` `console.timeEnd()` 显示代码的运行时间
+- `console.log`  用于输出普通信息
+- `console.info`  用于输出提示性信息
+- `console.error` 用于输出错误信息
+- `console.warn` 用于输出警示信息
+
+
 ## 其他
 
-- `console.dir()` 输出对象所有属性
 - 使用`$0`获取当前元素
 - document.body.contentEditable='true';  改变当前页面为可编辑状态
 - console控制台里  右键 `log XMLHttpRequest` 调试 XMLHttpRequest
