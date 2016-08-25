@@ -10,6 +10,10 @@
     git config --global core.whitespace cr-at-eol
     git diff的时候忽略换行符的差异, ^M的消除
 
+    git config --global -l 显示所有全局所有git配置
+
+    git config --glabal -e 修改全局配置文件
+
     git clone
     如果是 `git` 协议需要 ssh密钥
     如果是 `https` 协议不需要密钥,但需要每次输入用户名和密码
