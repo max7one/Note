@@ -56,14 +56,15 @@ keymap.cson 快捷键设置
 
 ## 常用插件
 
-- emmet  (script:src => <script src=""></script>)
-- atom-beautify
-- file-icons
-- open-in-browser
-- autocomplete-paths
-- webbox-color
-- file-icons
-- Goto Definition
+- `emmet`  (script:src => <script src=""></script>)
+- `atom-beautify`
+- `file-icons`
+- `open-in-browser`
+- `autocomplete-paths`
+- `webbox-color`
+- `file-icons`
+- `Goto Definition`
+- `split-diff`
 
 **注意点**
 `tree-view` 的 `Hide Ignored Names`选上
