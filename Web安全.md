@@ -42,3 +42,7 @@ function foo(data) {
 
 上面代码通过动态添加`<script>`元素，向服务器example.com发出请求  
 注意，该请求的查询字符串有一个callback参数，用来指定回调函数的名字，这对于JSONP是必需的
+
+将服务端的数据用padding包起来，所谓的padding就相当于一个函数  
+假设我们原来有数据 {"data","something"}，用一个名为callback的padding包起来之后 就成了 callback({"data":"something"})  
+这样将script标签加载完毕之后，会立马执行这个函数，并将数据当做参数传了进去

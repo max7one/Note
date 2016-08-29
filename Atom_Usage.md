@@ -54,6 +54,14 @@ keymap.cson 快捷键设置
     'ctrl-m': 'markdown-preview:toggle'
 ```
 
+snippets.cson 配置
+```
+'.source.js':
+    'dot':
+        'prefix': 'd'
+        'body': '<%= ${1:"replaced"} %>$2'
+```
+
 ## 常用插件
 
 - `emmet`  (script:src => <script src=""></script>)
