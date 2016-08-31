@@ -4,6 +4,7 @@
 - http://www.appinn.com/
 - http://www.iplaysoft.com/
 - http://www.potplayer.org/
+- http://www.ntwind.com/software/vistaswitcher.html
 
 ### 技术博客
 - http://www.zhangxinxu.com/wordpress/
@@ -18,7 +19,7 @@
 - https://github.com `Github`
 - http://www.bootcdn.cn/ `BootCDN`
 - https://smallpdf.com/cn `PDF`
-- http://pan.baidu.com/disk/home 
+- http://pan.baidu.com/disk/home
 
 
 ### 技术
