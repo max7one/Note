@@ -103,8 +103,9 @@
 
     gco = git checkcout --filename (用暂存区里的版本替换工作区的版本)
 
-    git checkout -- filename
+    git checkout -- filename (很常用,本地用来复原的)
     命令中的“--”很重要，没有“--”，就变成了“创建一个新分支”的命令
+
     git checkout .
     会取消所有本地的修改 (慎用)
 
