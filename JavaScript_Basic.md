@@ -198,3 +198,26 @@ function func() {
 ### canvas
 
 ctx.beginPath();重置路线
+
+
+### 数组
+中断遍历
+```js
+(function(){
+var i=0;
+arr.some(function(ele){i++;return ele==45})
+console.log(i);
+}())
+// i = 4
+```
+
+递归调用
+```js
+function do(){
+    if (result) {
+        return;
+    }else {
+        do();
+    }
+}
+```
