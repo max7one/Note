@@ -167,6 +167,7 @@ console.log(time);
 String('123') === '123'; // true  
 new String('123') === '123'; //false  左边为对象
 ```
+'(111)'.slice(1,-1); // '111'
 
 ### 构造函数  
 
