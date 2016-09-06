@@ -222,3 +222,11 @@ function do(){
     }
 }
 ```
+
+判断是否是数组
+```js
+function isArray(obj) {  
+  return Object.prototype.toString.call(obj) === '[object Array]';   
+}
+
+```
