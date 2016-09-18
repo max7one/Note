@@ -60,4 +60,4 @@
 
 28. 对于模板内的事件绑定，可以用jquery委托事件
 
-29. 注意请求的url 可能需要加上'ly' php打印`$this->loginfo($result)`
+29. 注意请求的url 可能需要加上'ly' php打印`$this->loginfo(json_encode($result))`
