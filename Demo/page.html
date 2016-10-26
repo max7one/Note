@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="http://g.alicdn.com/sj/qnui/1.3.0/css/sui.min.css">
+<div class="con"> </div>
+<div id="page"></div>
+
+
+<script src="http://cdn.zzgdapp.com/pubcdn/handlebars-1.0.1.js"></script>
+
+<script type="text/javascript">
+    /**
+     * 显示分页
+     * @param  {string} div   选择权
+     * @param  {[type]} fun   调用的函数
+     * @param  {[type]} no    [description]
+     * @param  {[type]} total [description]
+     * @return {[type]}       [description]
+     */
+    function showPage(div,fun,no,pagenum,total) {
+        var endno = Math.ceil(total / pagenum);
+        document.querySelector(div).innerHTML = '<style>.page-btn { width: 48px; height: 22px; padding: 0; font-weight: bold; margin-left: 5px; border-radius: 0;}</style><div class="myPage">\
+        <a href="#" class="sui-btn btn-small btn-primary page-btn" data="1">首页</a>\
+        <a href="#" class="sui-btn btn-small btn-primary page-btn" data="' + (Number(no) - 1) + '">上一页</a>\
+        <a href="#" class="sui-btn btn-small btn-primary page-btn" data="' + (Number(no) + 1) + '">下一页</a>\
+        <a href="#" class="sui-btn btn-small btn-primary page-btn" data="' + endno + '">尾页</a> 第 <span id="page_no"> 1</span >页\
+        共 <span id="page_sum" style="color:#28A3EF">' + endno + '</span>页\
+        <span id="page_total" style="color:#28A3EF">' + total + '</span>条记录 到\
+        <input id="page_where" type="text" style="width:30px">页\
+        <a href="#" class="sui-btn btn-small btn-primary page-btn" id="confirm">跳转</a>\
+        </div>'
+        if(no == 1){
+            document.querySelectorAll('.myPage a')[1].classList.add('disabled')
+        }
+        if(no == endno){
+            document.querySelectorAll('.myPage a')[2].classList.add('disabled')
+        }
+        document.querySelectorAll('.myPage a').forEach(function(ele,i) {
+            if(no == 1 && i == 1) return;
+            if(no == endno && i == 2) return;
+            if (ele.getAttribute('id')) {
+                ele.onclick = function() {
+                    var pageno = Math.floor(document.getElementById('page_where').value);
+                    if (isNaN(pageno) || pageno < 1 || pageno > total){
+                        return alert('不在范围内');
+                    }
+                    fun(pageno);
+                };
+            } else {
+                ele.onclick = function() {
+                    var pageno = ele.getAttribute('data');
+                    fun(pageno);
+                };
+            }
+        })
+    }
+
+    /*显示列表*/
+    function show(no) {
+        var pagenum = 5;
+        var arr = [];
+        for (var i = 1; i < 28; i++) {
+            arr.push(i);
+        }
+        var htmlstr = "";
+        var arr1 = arr.slice((pagenum * (no - 1)), (pagenum * (no)))
+        for (var i = 0; i < arr1.length; i++) {
+            htmlstr += "<p>" + arr1[i] + "</p>"
+        }
+        document.querySelector('.con').innerHTML = htmlstr;
+        var total = arr.length;
+        showPage("#page",show,no,pagenum,total);
+    }
+    show(1);
+</script>
