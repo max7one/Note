@@ -1,15 +1,15 @@
 ## Shortcuts
 
-`F12`或`Ctrl-Shift-i` 打开/关闭开发者工具
-`Ctrl-Shift-J`  打开/关闭控制台
-`Ctrl-F`  页面查找
-`Ctrl-R`  刷新页面
-`Ctrl-L`  选中地址栏
-`ctrl-e`  地址栏搜索
-`Ctrl-Space`  自动补全
-`Ctrl-M`  光标转到匹配的括号
-`Ctrl-0 ` 恢复默认字体大小
-`Ctrl-Shift-M` 切换到手机模式
+`F12`或`Ctrl-Shift-i` 打开/关闭开发者工具  
+`Ctrl-Shift-J`  打开/关闭控制台  
+`Ctrl-F`  页面查找  
+`Ctrl-R`  刷新页面  
+`Ctrl-L`  选中地址栏  
+`ctrl-e`  地址栏搜索  
+`Ctrl-Space`  自动补全  
+`Ctrl-M`  光标转到匹配的括号  
+`Ctrl-0 ` 恢复默认字体大小  
+`Ctrl-Shift-M` 切换到手机模式  
 
 ## 插件
 - uBlock Origin
@@ -27,14 +27,14 @@
 
 ## Dev Shortcuts
 
-`ctrl-backspace`  控制台向前删除一个单词
-`alt-鼠标左键单击`  展开/折叠节点及其子元素
-`ctrl-p`  `source`面板搜索文件
-`ctrl-shift-c`  选择页面元素
-`h`  隐藏选中的代码
-`delete` 删除选中的代码
-`shift-enter` 代码换行
-`ctrl-shirt-j`  打开控制台
+`ctrl-backspace`  控制台向前删除一个单词  
+`alt-鼠标左键单击`  展开/折叠节点及其子元素  
+`ctrl-p`  `source`面板搜索文件  
+`ctrl-shift-c`  选择页面元素  
+`h`  隐藏选中的代码  
+`delete` 删除选中的代码  
+`shift-enter` 代码换行  
+`ctrl-shirt-j`  打开控制台  
 
 ## 调试方式
 
