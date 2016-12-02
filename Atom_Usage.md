@@ -67,9 +67,13 @@ snippets.cson 配置
 
 - `emmet`  (script:src => <script src=""></script>)
 - `atom-beautify`
-- `file-icons`
+- `Highlight Selected`
 - `open-in-browser`
+- `pigments`
 - `autocomplete-paths`
+- `merge-conflicts`
+- `atom-ternjs`
+- `file-icons`
 - `webbox-color`
 - `file-icons`
 - `Goto Definition`

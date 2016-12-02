@@ -12,12 +12,12 @@
 `Ctrl-Shift-M` 切换到手机模式  
 
 ## 插件
-- uBlock Origin
-- Axure RP Extension for Chrome
-- Google翻译
-- OneTab
-- Octotree
 - Proxy SwitchyOmega
+- uBlock Origin
+- Google翻译
+- Octotree
+- Axure RP Extension for Chrome
+- OneTab
 - Search by Image (by Google)
 - SimpleExtManager
 - Wappalyzer
