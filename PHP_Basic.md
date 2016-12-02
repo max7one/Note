@@ -18,8 +18,18 @@
 
 类声明 `class` ,继承 `extends`
 
-echo "\n";  html源代码换行
-echo "<br>";　页面显示换行
+echo "\n";  控制台换行
+echo "<br>";　html页面显示换行
+
+#### 数组和类数组
+
+php 的 类数组的 `key` 可以为`string`,或者 `integer`    
+```php
+$array = array(
+    "foo" => "bar",
+    "bar" => "foo",
+);
+```
 
 ### 引用
 
