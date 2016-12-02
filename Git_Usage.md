@@ -1,5 +1,7 @@
 ## 初始设置
 
+#### [github help](https://help.github.com/)
+
     git config --global user.name "Your Name"
     git config --global user.email "email@example.com"
     设置用户名和邮箱
