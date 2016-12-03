@@ -71,6 +71,7 @@ snippets.cson 配置
 - `open-in-browser`
 - `pigments`
 - `autocomplete-paths`
+- `sublime-block-comment`
 - `merge-conflicts`
 - `atom-ternjs`
 - `file-icons`
