@@ -43,15 +43,15 @@ keymap.cson 快捷键设置
 ```
 '.editor':
     'ctrl-shift-h': 'atom-beautify:beautify-editor'
+    'ctrl-alt-,': 'application:show-settings'
 
 'atom-text-editor':
+    'ctrl-e': 'emmet:expand-abbreviation'
     'ctrl-h': 'editor:move-to-first-character-of-line'
     'ctrl-i': 'editor:move-to-end-of-screen-line'
     'ctrl-shift-i': 'editor:split-selections-into-lines'
     'ctrl-0': 'open-in-browser:open'
     'ctrl-shift-/': 'editor:toggle-block-comments'
-
-'atom-workspace, atom-workspace atom-text-editor':
     'ctrl-m': 'markdown-preview:toggle'
 ```
 
