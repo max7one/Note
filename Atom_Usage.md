@@ -76,7 +76,6 @@ snippets.cson 配置
 - `atom-ternjs`
 - `file-icons`
 - `webbox-color`
-- `file-icons`
 - `Goto Definition`
 - `split-diff`
 
