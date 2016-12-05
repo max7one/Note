@@ -16,6 +16,13 @@ npm --registry https://registry.npm.taobao.org info underscore
 registry = https://registry.npm.taobao.org
 ```
 
+#### http代理
+
+```
+npm config set proxy http://localhost:1080
+```
+
+
 ## 其它
 
 在行尾写入 字符串
