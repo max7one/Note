@@ -63,3 +63,5 @@
 29. 注意请求的url 可能需要加上'ly' php打印`$this->loginfo(json_encode($result))`
 
 30. dot一定要注意结尾加上`;`
+
+31. loginfo 在往文件里 写日志  echo在控制台输出  可以输出到页面
