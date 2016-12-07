@@ -111,6 +111,11 @@
     git checkout .
     会取消所有本地的修改 (慎用)
 
+    git clean
+    删除 一些 没有 Git add 的 文件
+      -n 显示 将要 删除的 文件 和  目录
+      -f 删除 文件，-df 删除 文件 和 目录
+
     grh = git reset HEAD filename 把暂存区的修改撤销掉，跟HEAD版本里的相同
     git reset --hard HEAD~1     返回到最近的第二次提交
 
