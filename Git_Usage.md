@@ -16,6 +16,15 @@
 
     git config --glabal -e 修改全局配置文件
 
+    设置全局代理
+    git config --global https.proxy https://127.0.0.1:1080
+
+    取消全局代理
+    git config --global --unset https.proxy
+
+    设置本地代理
+    git config --local https.proxy https://127.0.0.1:1080
+
     git clone
     如果是 `git` 协议需要 ssh密钥
     如果是 `https` 协议不需要密钥,但需要每次输入用户名和密码
