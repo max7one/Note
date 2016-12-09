@@ -22,6 +22,10 @@ registry = https://registry.npm.taobao.org
 npm config set proxy http://localhost:1080
 ```
 
+#### 初始化npm配置
+```
+npm init -y (跳过选择项)
+```
 
 ## 其它
 
