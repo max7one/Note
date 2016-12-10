@@ -6,7 +6,7 @@
 
     /dev/null 黑洞设备 (用来删除文件)
 
-    more / less  
+    more / less
     通过shell查看文本，more只能往下，less可上可下
 
     history  查看历史
@@ -34,7 +34,7 @@
 
 ### 进程
 
-    ps aux | grep nginx  
+    ps aux | grep nginx
     ps -ef | grep mysqld
     把进程中包含nginx的信息列出来
 
@@ -42,10 +42,13 @@
 
     top  查看cpu,内存占用
 
-### 网络    
+### 网络
+
+    netstat -tnl
+    查看所有端口
 
     netstat -tnl | grep 9000
-    查看端口是否被占用
+    查看9000端口是否被占用
 
     ifconfig -a  查看IP地址
 
@@ -82,7 +85,7 @@
     s ：特殊权限
 
     chmod 777  /www  创建一个 /www 目录设置为 777 权限
-    chmod -R 777 dir  改变dir下所有文件的权限  
+    chmod -R 777 dir  改变dir下所有文件的权限
     0表示没有权限，1表示可执行权限，2表示可写权限，4表示可读权限
     sudo chmod -R a+x test 对所有用户可执行
 
@@ -120,13 +123,13 @@
      2)可以进入目录并使用cd切换进入目录 
     4、没有任何权限,用-表示 
 
-### 系统信息    
+### 系统信息
 
     uname -a    显示系统信息
     df -h     显示硬盘空间
     free -h   显示内存空间
 
-### 操作文件和文件夹    
+### 操作文件和文件夹
 
     mkdir -p  123/123  递归的创建多个目录
           -m 777 text  创建权限为777的目录
@@ -170,7 +173,7 @@
     bg        查看后台 的job
     fg        把后台任务放到前台
     &         加在一个命令的最后，可以把这个命令放到后台执行
-    nohup COMMAND    
+    nohup COMMAND
              如果让程序始终在后台执行，即使关闭当前的终端也执行
              关闭中断后，在另一个终端jobs已经无法看到后台跑得程序了，此时利用ps
 
